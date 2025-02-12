@@ -1,0 +1,247 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #000000, #1b1b1b); /* Dark gradient background */
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Hero Section - Space-like background */
+section.intro {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('images/space-bg.jpg') no-repeat center center/cover;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 50px;
+}
+
+section.intro h2 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
+}
+
+section.intro p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+/* Space-Themed Button */
+.btn-space {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.4);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-space:hover {
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 204, 0, 0.6);
+}
+
+.btn-space:active {
+    transform: scale(1);
+    background: #ff6600;
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.4);
+}
+
+
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    font-size: 1rem;
+    color: #fff;
+}
+/* Planet List Section - Center Everything */
+/* Planet List Section */
+.planet-list {
+    display: flex;
+    flex-direction: column;        /* Stack heading and items vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;            /* Center text inside each planet item */
+    height: 100vh;                 /* Make it take full viewport height */
+    padding: 20px;
+    background: url('images/space-bg.jpg') no-repeat center center/cover;
+}
+
+/* Heading Style */
+.planet-list h2 {
+    color: #ffcc00;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Container for planet items */
+.planet-list .container {
+    display: flex;                 /* Use flex to align planet items */
+    justify-content: center;       /* Center the items horizontally */
+    flex-wrap: wrap;               /* Allow items to wrap onto new rows */
+    gap: 30px;                     /* Space between the planet items */
+}
+
+/* Style for each planet item */
+.planet-list .planet-item {
+    width: 200px;                  /* Set a fixed width for each planet item */
+    text-align: center;            /* Center the text inside the planet item */
+}
+
+.planet-list .planet-item img {
+    width: 100%;                   /* Ensure the image takes full width of the container */
+    height: auto;                  /* Maintain the image aspect ratio */
+    border-radius: 10px;           /* Slightly round the corners of the image */
+    
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+/* Hover effect for images */
+.planet-list .planet-item img:hover {
+    transform: scale(1.1);         /* Slight zoom effect on hover */
+}
+
+/* Planet Name Style */
+.planet-list .planet-item h3 {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-bottom: 10px;            /* Space between the name and the image */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .planet-list .planet-item {
+        width: 150px;  /* Reduce the size of planet items on smaller screens */
+    }
+    .planet-list h2 {
+        font-size: 1.5rem;  /* Make the heading smaller on mobile */
+    }
+}
+
+
+
+/* Planet Detail */
+.planet-detail {
+    padding: 50px 20px;
+    text-align: center;
+    background: url('images/space-bg.jpg') no-repeat center center/cover;
+}
+.planet-detail p {
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffcc00;
+    background:linear-gradient(180deg,#6000fa,#ffffff00);
+    box-shadow: #000000;
+    border-radius: 10px;
+}
+
+
+.planet-detail h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.planet-detail ul {
+    list-style: none;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+.planet-detail ul li {
+    margin: 15px 0;
+}
+
+.planet-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+.planet-detail .key-facts {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section.intro h2 {
+        font-size: 2rem;
+    }
+
+    .planet-list ul {
+        grid-template-columns: 1fr;
+    }
+
+    .planet-img {
+        width: 90%;
+    }
+}
+
